@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>9d</title>
+  <title>playing with dom</title>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -19,23 +20,6 @@
     getIputElement();
     ">Submit</button>
   </p>
-
-  <script>
-    function handleInputKey(event) {
-      if (event.key === 'Enter') {
-        getIputElement();
-      }
-    }
-
-    function getIputElement() {
-      const inputElement = document.querySelector('.input-name')
-      let text = inputElement.value
-
-
-      document.querySelector('.render-name').innerHTML = `Hello ${text}, Good morning!`
-    }
-
-  </script>
 </body>
 
 </html>
